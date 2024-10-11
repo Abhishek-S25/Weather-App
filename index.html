@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Weather App" />
+    <meta property="og:url" content="Weather App" />
+    <meta property="og:image" content="./assets/mist.png" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" class="input-text" placeholder="Enter City">
+                <button class="fa fa-search" id="search-btn"></button>
+            </div>
+        </div>
+        <div class="weather-body">
+            <img src="./assets/cloud.png" alt="Weather Img" class="weather-img">
+            
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-duotone fa-solid fa-droplet"></i>
+                    <div class="text"><span id="humidity">45%</span><p>Humidity</p></div>
+                </div>
+                <div class="wind">
+                    <i class="fa-duotone fa-solid fa-wind"></i>
+                    <div class="text"><span id="wind-speed">12 Km/Hr</span><p>Wind Speed</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
